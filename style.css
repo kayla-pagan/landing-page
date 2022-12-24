@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
+
+#logo {
+    width: 180px;
+    height: 180px;
+}
+
+#hero-section {
+    background-color: #1F2937;
+    height: 30vh;
+}
+
+h1, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
