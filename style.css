@@ -5,6 +5,10 @@ body {
 header {
     background-color: #1F2937;
     color: #E5E7EB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 200px;
 }
 
 #logo {
@@ -12,12 +16,70 @@ header {
     height: 180px;
 }
 
+#main-link-container {
+    display: flex;
+    gap: 2em;
+}
+
+.main-links {
+    text-decoration: none;
+    color: #E5E7EB;
+    padding: 10px 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+}
+
 #hero-section {
     background-color: #1F2937;
     height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 220px;
+    gap: 20em;
+
 }
 
 h1, p {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: #E5E7EB;
+    font-size: 40px;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    color: #E5E7EB; 
+    font-size: 25px; 
+}
+
+#quote-btn {
+    background-color: rgb(255, 213, 1, 0.7);
+    padding: 15px 50px;
+    border-radius: 80px;
+    color: #E5E7EB;
+    border: 2px solid #FFD501;
+    font-family: 'Inter', sans-serif;
+    font-size: 23px;
+    box-shadow: 0 0 20px #ffd501;
+    margin-top: 15px;
+}
+
+#hero-gif {
+    border-radius: 30px;
+    width: 450px;
+    height: 250px;
 }
