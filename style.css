@@ -56,13 +56,13 @@ h1, p {
 
 h1 {
     font-family: 'Inter', sans-serif;
-    color: #E5E7EB;
+    color: #F9FAF8;
     font-size: 40px;
 }
 
 p {
     font-family: 'Quicksand', sans-serif;
-    color: #E5E7EB; 
+    color: #F9FAF8; 
     font-size: 25px; 
 }
 
@@ -82,4 +82,23 @@ p {
     border-radius: 30px;
     width: 450px;
     height: 250px;
+}
+
+#info-section {
+    height: 30vh;
+    padding: 180px 0px;
+}
+
+#btns-container {
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-btns {
+    border: 5px solid #FFD50199;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
 }
