@@ -41,10 +41,11 @@ header {
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1500px) {
     #hero-section {
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+        justify-content: flex-start;
         gap: 8em;
     }
 }
@@ -59,8 +60,7 @@ h1, p {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
-    flex-wrap: wrap;
-    flex: auto;
+    flex: 0 1 auto;
     min-width: 400px;
 
 }
@@ -111,16 +111,19 @@ h2 {
 
 #btns-container {
     display: flex;
-    gap: 4em;
+    gap: 7em;
     justify-content: center;
     align-items: center;
     flex: 0 1 0%;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 
 @media only screen and (max-width: 600px) {
     #btns-container {
         flex-direction: column;
-        gap: 8em;
+        /*align-items: flex-start; */
+        gap: 7em;
     }
     
 }
@@ -129,8 +132,9 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    border: 5px solid #FFD50199;
-    box-shadow: 0 0 20px #FFD501;
+    background-color: rgb(255, 213, 1, 0.4);
+    border: 2px solid #FFD50199;
+    box-shadow: 0 0 10px #FFD501;
     border-radius: 10px;
     width: 200px;
     height: 200px;
