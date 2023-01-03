@@ -36,6 +36,10 @@ header {
     font-size: 25px;
 }
 
+svg {
+    display: none;
+}
+
 #hero-section {
     background-color: #1F2937;
     height: 35vh;
@@ -43,24 +47,19 @@ header {
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 220px;
+    padding: 100px 64px;
     gap: 20em;
 
 }
 
-
-
 h1, p {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 #intro {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 16px;
-    flex: 0 1 auto;
     min-width: 400px;
     max-width: 600px;
 
@@ -111,7 +110,7 @@ h2 {
 
 }
 
-#btns-container {
+#info-btns-container {
     display: flex;
     gap: 7em;
     justify-content: center;
@@ -121,7 +120,7 @@ h2 {
     align-content: space-between;
 }
 
-.img-btns {
+.info-btn {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -133,7 +132,7 @@ h2 {
     height: 200px;
 }
 
-.imgs {
+.info-img {
     width: 200px;
     height: 200px;
 }
@@ -161,11 +160,10 @@ h2 {
 }
 
 span {
+    display: contents;
     font-family: 'Inter', sans-serif;
     color: #1F2937;
     font-size: 25px;
-    margin-left: 750px;
-    text-align: center;
 }
 
 #cta-section {
@@ -231,6 +229,8 @@ footer {
 }
 
 
+/* ALL MEDIA QUERIES */
+
 @media only screen and (max-width: 1500px) {
     #hero-section {
         flex-direction: column;
@@ -271,6 +271,10 @@ footer {
         margin: 0px auto;
     }
 
+    span {
+        font-size: 26px;
+    }
+
     h4 {
         font-size: 25px;
     }
@@ -281,17 +285,35 @@ footer {
 
     #cta-btn {
         padding: 10px 15px;
-        font-size: 18px;
-        margin: 0px 10px;
+        font-size: 20px;
+        margin-right: 10px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    
+    .main-links {
+        display: none;
+    }
+
+    header {
+        padding: 0 30px;
+    }
+
+    #header-container {
+        max-width: none;
+        justify-content: space-between;
+    }
+
+    svg {
+        display: inline;
+        color: #E5E7EB;
+        width: 35px;
+        height: 35px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-    #btns-container {
+    #info-btns-container {
         flex-direction: column;
         align-items: center;
         align-content: center;
@@ -332,7 +354,7 @@ footer {
         font-size: 18px;
     }
 
-    .img-btns, .imgs {
+    .info-btn, .info-img {
         width: 100px;
         height: 100px;
     }
@@ -340,6 +362,11 @@ footer {
     #quote {
         font-size: 23px;
         max-width: 400px;
+    }
+
+    span {
+        font-size: 21px;
+        display: inline-block;
     }
 
     h4 {
@@ -356,7 +383,6 @@ footer {
 
     #cta-btn {
         width: 90%;
-        font-size: 20px;
-        margin: 0px 10px;
+        font-size: 18px;
     }
 }
