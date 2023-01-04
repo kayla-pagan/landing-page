@@ -5,7 +5,7 @@ body {
 
 header {
     background-color: #1F2937;
-    padding: 0px 200px;
+    padding: 0px 80px;
 }
 
 #header-container {
@@ -47,7 +47,7 @@ svg {
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 64px;
+    padding: 100px 80px;
     gap: 20em;
 
 }
@@ -59,6 +59,7 @@ h1, p {
 #intro {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 16px;
     min-width: 400px;
     max-width: 600px;
@@ -307,8 +308,15 @@ footer {
     svg {
         display: inline;
         color: #E5E7EB;
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
+    }
+
+    svg:hover {
+        background-color: #E5E7EB;
+        color: #1F2937;
+        border-radius: 8px;
+        padding: 5px;
     }
 }
 
@@ -341,7 +349,7 @@ footer {
         text-align: start;
     }
 
-    #quote-btn {
+   #quote-btn {
         width: 100%;
         font-size: 18px;
     }
