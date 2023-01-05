@@ -61,7 +61,7 @@ h1, p {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
-    min-width: 400px;
+    min-width: 230px;
     max-width: 600px;
 
 }
@@ -146,9 +146,8 @@ h2 {
 }
 
 #quote-section {
-    gap: 1em;
     background-color: #E5E7EB;
-    padding: 150px 0px;
+    padding: 150px 12px;
     text-align: center;
 }
 
@@ -296,7 +295,7 @@ footer {
         display: none;
     }
 
-    header {
+    header, #hero-section {
         padding: 0 30px;
     }
 
@@ -321,6 +320,16 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+    #logo {
+        height: 160px;
+        width: 160px;
+    }
+
+    svg {
+        height: 25px;
+        width: 25px;
+    }
+    
     #info-btns-container {
         flex-direction: column;
         align-items: center;
@@ -333,8 +342,8 @@ footer {
     }
 
    #hero-img {
-        width: 400px;
-        height: 200px;
+        width: 100%;
+        height: 100%;
     }
 
     h1 {
@@ -368,12 +377,12 @@ footer {
     }
 
     #quote {
-        font-size: 23px;
-        max-width: 400px;
+        font-size: 20px;
+        max-width: 300px;
     }
 
     span {
-        font-size: 21px;
+        font-size: 19px;
         display: inline-block;
     }
 
